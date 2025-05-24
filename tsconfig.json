@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@passkey-orchestrator/shared": ["./packages/shared/src"],
+      "@passkey-orchestrator/client": ["./packages/client/src"],
+      "@passkey-orchestrator/server": ["./packages/server/src"],
+      "@passkey-orchestrator/analytics": ["./packages/analytics/src"],
+      "@passkey-orchestrator/management": ["./packages/management/src"],
+      "@passkey-orchestrator/dev-tools": ["./packages/dev-tools/src"]
+    }
+  },
+  "include": ["packages/*/src/**/*"],
+  "exclude": ["node_modules", "dist", "build", ".next"]
+}

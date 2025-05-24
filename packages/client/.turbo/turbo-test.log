@@ -1,0 +1,282 @@
+
+
+> @passkey-orchestrator/client@1.0.0 test
+> vitest
+
+[1G[0K[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+[7m[1m[34m DEV [39m[22m[27m [34mv1.6.1[39m [90m/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client[39m
+
+[?25l [90m·[39m [2msrc/[22mui-helpers[2m.test.ts[22m[2m (23)[22m
+[?25l[2K[1A[2K[G       [32m✓[39m should customize prompt for Android environment
+       [32m✓[39m should customize prompt for Windows environment
+     [33m❯[39m hidePasskeyPrompt[2m (2)[22m
+       [31m×[39m should hide prompt with animation
+       [31m×[39m should remove prompt from DOM after animation
+     [33m❯[39m showPasskeyError[2m (9)[22m
+       [32m✓[39m should display registration error
+       [32m✓[39m should display authentication error
+       [32m✓[39m should display unsupported error
+       [31m×[39m should show retry button when configured
+       [31m×[39m should handle close button click
+       [31m×[39m should auto-hide when configured
+       [32m✓[39m should apply theme and position
+       [32m✓[39m should add CSS styles to document head
+       [32m✓[39m should show suggestions for errors
+     [33m❯[39m hidePasskeyError[2m (2)[22m
+       [31m×[39m should hide error with animation
+       [31m×[39m should remove error from DOM after animation
+[?25l[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G       [31m×[39m should register successfully with valid response
+       [32m✓[39m should throw error when no credential is created
+       [32m✓[39m should handle WebAuthn errors
+       [31m×[39m should use excludeCredentials when provided
+     [33m❯[39m authenticate[2m (5)[22m
+       [31m×[39m should authenticate successfully with valid response
+       [31m×[39m should handle null userHandle
+       [32m✓[39m should throw error when no credential is provided
+       [32m✓[39m should handle WebAuthn errors
+       [31m×[39m should use allowCredentials when provided
+     [33m❯[39m getEnvironment[2m (2)[22m
+       [32m✓[39m should return undefined before initialization
+       [31m×[39m should return environment after initialization
+     [32m✓[39m getConfig[2m (2)[22m
+     [32m✓[39m updateConfig[2m (2)[22m
+     [32m✓[39m isSupported[2m (1)[22m
+     [33m❯[39m create[2m (1)[22m
+       [31m×[39m should create and initialize orchestrator
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G [33m❯[39m [2msrc/[22mui-helpers[2m.test.ts[22m[2m (23)[22m
+   [33m❯[39m UI Helpers[2m (23)[22m
+     [33m❯[39m renderPasskeyPrompt[2m (10)[22m
+       [32m✓[39m should create and render a registration prompt
+       [32m✓[39m should create and render an authentication prompt
+       [31m×[39m should show cancel button when configured
+       [32m✓[39m should not show cancel button by default
+       [32m✓[39m should apply theme attribute
+       [32m✓[39m should apply position attribute
+       [32m✓[39m should add CSS styles to document head
+       [32m✓[39m should not duplicate CSS styles
+       [32m✓[39m should customize prompt for Android environment
+       [32m✓[39m should customize prompt for Windows environment
+     [33m❯[39m hidePasskeyPrompt[2m (2)[22m
+       [31m×[39m should hide prompt with animation
+       [31m×[39m should remove prompt from DOM after animation
+     [33m❯[39m showPasskeyError[2m (9)[22m
+       [32m✓[39m should display registration error
+       [32m✓[39m should display authentication error
+       [32m✓[39m should display unsupported error
+       [31m×[39m should show retry button when configured
+       [31m×[39m should handle close button click
+       [31m×[39m should auto-hide when configured
+       [32m✓[39m should apply theme and position
+       [32m✓[39m should add CSS styles to document head
+       [32m✓[39m should show suggestions for errors
+     [33m❯[39m hidePasskeyError[2m (2)[22m
+       [31m×[39m should hide error with animation
+       [31m×[39m should remove error from DOM after animation
+ [33m❯[39m [2msrc/[22morchestrator[2m.test.ts[22m[2m (27)[22m
+   [33m❯[39m PasskeyOrchestrator[2m (27)[22m
+     [32m✓[39m constructor[2m (8)[22m
+     [33m❯[39m initialize[2m (2)[22m
+       [31m×[39m should detect environment
+       [31m×[39m should cache environment after first detection
+     [33m❯[39m register[2m (4)[22m
+       [31m×[39m should register successfully with valid response
+       [32m✓[39m should throw error when no credential is created
+       [32m✓[39m should handle WebAuthn errors
+       [31m×[39m should use excludeCredentials when provided
+     [33m❯[39m authenticate[2m (5)[22m
+       [31m×[39m should authenticate successfully with valid response
+       [31m×[39m should handle null userHandle
+       [32m✓[39m should throw error when no credential is provided
+       [32m✓[39m should handle WebAuthn errors
+       [31m×[39m should use allowCredentials when provided
+     [33m❯[39m getEnvironment[2m (2)[22m
+       [32m✓[39m should return undefined before initialization
+       [31m×[39m should return environment after initialization
+     [32m✓[39m getConfig[2m (2)[22m
+     [32m✓[39m updateConfig[2m (2)[22m
+     [32m✓[39m isSupported[2m (1)[22m
+     [33m❯[39m create[2m (1)[22m
+       [31m×[39m should create and initialize orchestrator
+
+[31m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 17 [27m[22m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/orchestrator.test.ts[2m > [22mPasskeyOrchestrator[2m > [22minitialize[2m > [22mshould detect environment
+[31m[1mPasskeyEnvironmentError[22m: WebAuthn requires a secure context (HTTPS)[39m
+[36m [2m❯[22m Module.validateEnvironment src/environment.ts:[2m243:11[22m[39m
+    [90m241| [39m  [90m// Check for secure context[39m
+    [90m242| [39m  [35mif[39m ([35mtypeof[39m window [33m!==[39m [32m'undefined'[39m [33m&&[39m [33m![39mwindow[33m.[39misSecureContext) {
+    [90m243| [39m    [35mthrow[39m [35mnew[39m [33mPasskeyEnvironmentError[39m(
+    [90m   | [39m          [31m^[39m
+    [90m244| [39m      [32m'WebAuthn requires a secure context (HTTPS)'[39m[33m,[39m
+    [90m245| [39m      [32m'insecure_context'[39m
+[90m [2m❯[22m PasskeyOrchestrator.initialize src/orchestrator.ts:[2m48:5[22m[39m
+[90m [2m❯[22m src/orchestrator.test.ts:[2m131:27[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ originalError: undefined, code: 'ENVIRONMENT_ERROR', category: 'environment', reason: 'insecure_context' }[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/17]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/orchestrator.test.ts[2m > [22mPasskeyOrchestrator[2m > [22minitialize[2m > [22mshould cache environment after first detection
+[31m[1mPasskeyEnvironmentError[22m: WebAuthn requires a secure context (HTTPS)[39m
+[36m [2m❯[22m Module.validateEnvironment src/environment.ts:[2m243:11[22m[39m
+    [90m241| [39m  [90m// Check for secure context[39m
+    [90m242| [39m  [35mif[39m ([35mtypeof[39m window [33m!==[39m [32m'undefined'[39m [33m&&[39m [33m![39mwindow[33m.[39misSecureContext) {
+    [90m243| [39m    [35mthrow[39m [35mnew[39m [33mPasskeyEnvironmentError[39m(
+    [90m   | [39m          [31m^[39m
+    [90m244| [39m      [32m'WebAuthn requires a secure context (HTTPS)'[39m[33m,[39m
+    [90m245| [39m      [32m'insecure_context'[39m
+[90m [2m❯[22m PasskeyOrchestrator.initialize src/orchestrator.ts:[2m48:5[22m[39m
+[90m [2m❯[22m src/orchestrator.test.ts:[2m142:20[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ originalError: undefined, code: 'ENVIRONMENT_ERROR', category: 'environment', reason: 'insecure_context' }[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/17]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/orchestrator.test.ts[2m > [22mPasskeyOrchestrator[2m > [22mregister[2m > [22mshould register successfully with valid response
+[31m[1mPasskeyRegistrationFailedError[22m: Unexpected error during WebAuthn operation: WebAuthn requires a secure context (HTTPS)[39m
+[36m [2m❯[22m Module.convertWebAuthnError ../shared/src/errors.ts:[2m190:10[22m[39m
+    [90m188| [39m  
+    [90m189| [39m  [90m// If it's not a DOMException, wrap it as an unknown error[39m
+    [90m190| [39m  [35mreturn[39m [35mnew[39m [33mPasskeyRegistrationFailedError[39m(
+    [90m   | [39m         [31m^[39m
+    [90m191| [39m    [32m`Unexpected error during WebAuthn operation: [39m[36m${[39merror[33m.[39mmessage[36m}[39m[32m`[39m[33m,[39m
+    [90m192| [39m    [32m'unknown'[39m[33m,[39m
+[90m [2m❯[22m PasskeyOrchestrator.register src/orchestrator.ts:[2m107:15[22m[39m
+[90m [2m❯[22m src/orchestrator.test.ts:[2m166:22[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ originalError: { stack: 'PasskeyEnvironmentError: WebAuthn requires a secure context (HTTPS)\n    at Module.validateEnvironment (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/environment.ts:243:11)\n    at PasskeyOrchestrator.initialize (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.ts:48:5)\n    at PasskeyOrchestrator.register (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.ts:59:9)\n    at /Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.test.ts:166:22\n    at runTest (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:958:5)\n    at startTests (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:967:3)', message: 'WebAuthn requires a secure context (HTTPS)', originalError: undefined, name: 'PasskeyEnvironmentError', code: 'ENVIRONMENT_ERROR', category: 'environment', reason: 'insecure_context', constructor: 'Function<PasskeyEnvironmentError>', toString: 'Function<toString>' }, code: 'REGISTRATION_FAILED', category: 'registration', reason: 'unknown' }[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/17]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/orchestrator.test.ts[2m > [22mPasskeyOrchestrator[2m > [22mregister[2m > [22mshould use excludeCredentials when provided
+[31m[1mPasskeyRegistrationFailedError[22m: Unexpected error during WebAuthn operation: WebAuthn requires a secure context (HTTPS)[39m
+[36m [2m❯[22m Module.convertWebAuthnError ../shared/src/errors.ts:[2m190:10[22m[39m
+    [90m188| [39m  
+    [90m189| [39m  [90m// If it's not a DOMException, wrap it as an unknown error[39m
+    [90m190| [39m  [35mreturn[39m [35mnew[39m [33mPasskeyRegistrationFailedError[39m(
+    [90m   | [39m         [31m^[39m
+    [90m191| [39m    [32m`Unexpected error during WebAuthn operation: [39m[36m${[39merror[33m.[39mmessage[36m}[39m[32m`[39m[33m,[39m
+    [90m192| [39m    [32m'unknown'[39m[33m,[39m
+[90m [2m❯[22m PasskeyOrchestrator.register src/orchestrator.ts:[2m107:15[22m[39m
+[90m [2m❯[22m src/orchestrator.test.ts:[2m220:7[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ originalError: { stack: 'PasskeyEnvironmentError: WebAuthn requires a secure context (HTTPS)\n    at Module.validateEnvironment (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/environment.ts:243:11)\n    at PasskeyOrchestrator.initialize (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.ts:48:5)\n    at PasskeyOrchestrator.register (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.ts:59:9)\n    at /Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.test.ts:220:7\n    at runTest (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:958:5)\n    at startTests (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:967:3)', message: 'WebAuthn requires a secure context (HTTPS)', originalError: undefined, name: 'PasskeyEnvironmentError', code: 'ENVIRONMENT_ERROR', category: 'environment', reason: 'insecure_context', constructor: 'Function<PasskeyEnvironmentError>', toString: 'Function<toString>' }, code: 'REGISTRATION_FAILED', category: 'registration', reason: 'unknown' }[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/17]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/orchestrator.test.ts[2m > [22mPasskeyOrchestrator[2m > [22mauthenticate[2m > [22mshould authenticate successfully with valid response
+[31m[1mPasskeyAuthFailedError[22m: Unexpected error during WebAuthn operation: WebAuthn requires a secure context (HTTPS)[39m
+[36m [2m❯[22m PasskeyOrchestrator.authenticate src/orchestrator.ts:[2m179:17[22m[39m
+    [90m177| [39m        [90m// Convert registration errors to authentication errors for this context[39m
+    [90m178| [39m        [35mif[39m (passkeyError [35minstanceof[39m [33mPasskeyRegistrationFailedError[39m) {
+    [90m179| [39m          [35mthrow[39m [35mnew[39m [33mPasskeyAuthFailedError[39m(
+    [90m   | [39m                [31m^[39m
+    [90m180| [39m            passkeyError[33m.[39mmessage[33m,[39m
+    [90m181| [39m            passkeyError[33m.[39mreason [35mas[39m any[33m,[39m
+[90m [2m❯[22m src/orchestrator.test.ts:[2m257:22[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ originalError: { stack: 'PasskeyEnvironmentError: WebAuthn requires a secure context (HTTPS)\n    at Module.validateEnvironment (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/environment.ts:243:11)\n    at PasskeyOrchestrator.initialize (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.ts:48:5)\n    at PasskeyOrchestrator.authenticate (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.ts:124:9)\n    at /Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.test.ts:257:22\n    at runTest (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:958:5)\n    at startTests (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:967:3)', message: 'WebAuthn requires a secure context (HTTPS)', originalError: undefined, name: 'PasskeyEnvironmentError', code: 'ENVIRONMENT_ERROR', category: 'environment', reason: 'insecure_context', constructor: 'Function<PasskeyEnvironmentError>', toString: 'Function<toString>' }, code: 'AUTHENTICATION_FAILED', category: 'authentication', reason: 'unknown' }[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/17]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/orchestrator.test.ts[2m > [22mPasskeyOrchestrator[2m > [22mauthenticate[2m > [22mshould handle null userHandle
+[31m[1mPasskeyAuthFailedError[22m: Unexpected error during WebAuthn operation: WebAuthn requires a secure context (HTTPS)[39m
+[36m [2m❯[22m PasskeyOrchestrator.authenticate src/orchestrator.ts:[2m179:17[22m[39m
+    [90m177| [39m        [90m// Convert registration errors to authentication errors for this context[39m
+    [90m178| [39m        [35mif[39m (passkeyError [35minstanceof[39m [33mPasskeyRegistrationFailedError[39m) {
+    [90m179| [39m          [35mthrow[39m [35mnew[39m [33mPasskeyAuthFailedError[39m(
+    [90m   | [39m                [31m^[39m
+    [90m180| [39m            passkeyError[33m.[39mmessage[33m,[39m
+    [90m181| [39m            passkeyError[33m.[39mreason [35mas[39m any[33m,[39m
+[90m [2m❯[22m src/orchestrator.test.ts:[2m286:22[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ originalError: { stack: 'PasskeyEnvironmentError: WebAuthn requires a secure context (HTTPS)\n    at Module.validateEnvironment (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/environment.ts:243:11)\n    at PasskeyOrchestrator.initialize (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.ts:48:5)\n    at PasskeyOrchestrator.authenticate (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.ts:124:9)\n    at /Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.test.ts:286:22\n    at runTest (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:958:5)\n    at startTests (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:967:3)', message: 'WebAuthn requires a secure context (HTTPS)', originalError: undefined, name: 'PasskeyEnvironmentError', code: 'ENVIRONMENT_ERROR', category: 'environment', reason: 'insecure_context', constructor: 'Function<PasskeyEnvironmentError>', toString: 'Function<toString>' }, code: 'AUTHENTICATION_FAILED', category: 'authentication', reason: 'unknown' }[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/17]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/orchestrator.test.ts[2m > [22mPasskeyOrchestrator[2m > [22mauthenticate[2m > [22mshould use allowCredentials when provided
+[31m[1mPasskeyAuthFailedError[22m: Unexpected error during WebAuthn operation: WebAuthn requires a secure context (HTTPS)[39m
+[36m [2m❯[22m PasskeyOrchestrator.authenticate src/orchestrator.ts:[2m179:17[22m[39m
+    [90m177| [39m        [90m// Convert registration errors to authentication errors for this context[39m
+    [90m178| [39m        [35mif[39m (passkeyError [35minstanceof[39m [33mPasskeyRegistrationFailedError[39m) {
+    [90m179| [39m          [35mthrow[39m [35mnew[39m [33mPasskeyAuthFailedError[39m(
+    [90m   | [39m                [31m^[39m
+    [90m180| [39m            passkeyError[33m.[39mmessage[33m,[39m
+    [90m181| [39m            passkeyError[33m.[39mreason [35mas[39m any[33m,[39m
+[90m [2m❯[22m src/orchestrator.test.ts:[2m326:7[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ originalError: { stack: 'PasskeyEnvironmentError: WebAuthn requires a secure context (HTTPS)\n    at Module.validateEnvironment (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/environment.ts:243:11)\n    at PasskeyOrchestrator.initialize (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.ts:48:5)\n    at PasskeyOrchestrator.authenticate (/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.ts:124:9)\n    at /Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/src/orchestrator.test.ts:326:7\n    at runTest (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:958:5)\n    at startTests (file:///Users/adramendiaye/Documents/dev/passkey_orchestror/packages/client/node_modules/@vitest/runner/dist/index.js:967:3)', message: 'WebAuthn requires a secure context (HTTPS)', originalError: undefined, name: 'PasskeyEnvironmentError', code: 'ENVIRONMENT_ERROR', category: 'environment', reason: 'insecure_context', constructor: 'Function<PasskeyEnvironmentError>', toString: 'Function<toString>' }, code: 'AUTHENTICATION_FAILED', category: 'authentication', reason: 'unknown' }[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/17]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/orchestrator.test.ts[2m > [22mPasskeyOrchestrator[2m > [22mgetEnvironment[2m > [22mshould return environment after initialization
+[31m[1mPasskeyEnvironmentError[22m: WebAuthn requires a secure context (HTTPS)[39m
+[36m [2m❯[22m Module.validateEnvironment src/environment.ts:[2m243:11[22m[39m
+    [90m241| [39m  [90m// Check for secure context[39m
+    [90m242| [39m  [35mif[39m ([35mtypeof[39m window [33m!==[39m [32m'undefined'[39m [33m&&[39m [33m![39mwindow[33m.[39misSecureContext) {
+    [90m243| [39m    [35mthrow[39m [35mnew[39m [33mPasskeyEnvironmentError[39m(
+    [90m   | [39m          [31m^[39m
+    [90m244| [39m      [32m'WebAuthn requires a secure context (HTTPS)'[39m[33m,[39m
+    [90m245| [39m      [32m'insecure_context'[39m
+[90m [2m❯[22m PasskeyOrchestrator.initialize src/orchestrator.ts:[2m48:5[22m[39m
+[90m [2m❯[22m src/orchestrator.test.ts:[2m351:7[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ originalError: undefined, code: 'ENVIRONMENT_ERROR', category: 'environment', reason: 'insecure_context' }[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/17]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/orchestrator.test.ts[2m > [22mPasskeyOrchestrator[2m > [22mcreate[2m > [22mshould create and initialize orchestrator
+[31m[1mPasskeyEnvironmentError[22m: WebAuthn requires a secure context (HTTPS)[39m
+[36m [2m❯[22m Module.validateEnvironment src/environment.ts:[2m243:11[22m[39m
+    [90m241| [39m  [90m// Check for secure context[39m
+    [90m242| [39m  [35mif[39m ([35mtypeof[39m window [33m!==[39m [32m'undefined'[39m [33m&&[39m [33m![39mwindow[33m.[39misSecureContext) {
+    [90m243| [39m    [35mthrow[39m [35mnew[39m [33mPasskeyEnvironmentError[39m(
+    [90m   | [39m          [31m^[39m
+    [90m244| [39m      [32m'WebAuthn requires a secure context (HTTPS)'[39m[33m,[39m
+    [90m245| [39m      [32m'insecure_context'[39m
+[90m [2m❯[22m PasskeyOrchestrator.initialize src/orchestrator.ts:[2m48:5[22m[39m
+[90m [2m❯[22m Function.create src/orchestrator.ts:[2m236:5[22m[39m
+[90m [2m❯[22m src/orchestrator.test.ts:[2m406:28[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[22m[39m
+[31m[1mSerialized Error:[22m[39m [90m{ originalError: undefined, code: 'ENVIRONMENT_ERROR', category: 'environment', reason: 'insecure_context' }[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/17]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/ui-helpers.test.ts[2m > [22mUI Helpers[2m > [22mrenderPasskeyPrompt[2m > [22mshould show cancel button when configured
+[31m[1m[7m FAIL [27m[22m[39m src/ui-helpers.test.ts[2m > [22mUI Helpers[2m > [22mhidePasskeyPrompt[2m > [22mshould hide prompt with animation
+[31m[1m[7m FAIL [27m[22m[39m src/ui-helpers.test.ts[2m > [22mUI Helpers[2m > [22mhidePasskeyPrompt[2m > [22mshould remove prompt from DOM after animation
+[31m[1m[7m FAIL [27m[22m[39m src/ui-helpers.test.ts[2m > [22mUI Helpers[2m > [22mshowPasskeyError[2m > [22mshould show retry button when configured
+[31m[1m[7m FAIL [27m[22m[39m src/ui-helpers.test.ts[2m > [22mUI Helpers[2m > [22mshowPasskeyError[2m > [22mshould handle close button click
+[31m[1m[7m FAIL [27m[22m[39m src/ui-helpers.test.ts[2m > [22mUI Helpers[2m > [22mshowPasskeyError[2m > [22mshould auto-hide when configured
+[31m[1m[7m FAIL [27m[22m[39m src/ui-helpers.test.ts[2m > [22mUI Helpers[2m > [22mhidePasskeyError[2m > [22mshould hide error with animation
+[31m[1m[7m FAIL [27m[22m[39m src/ui-helpers.test.ts[2m > [22mUI Helpers[2m > [22mhidePasskeyError[2m > [22mshould remove error from DOM after animation
+[31m[1mRangeError[22m: Maximum call stack size exceeded[39m
+[36m [2m❯[22m src/test-setup.ts:[2m111:3[22m[39m
+    [90m109| [39m[90m// Mock setTimeout for tests[39m
+    [90m110| [39mvi[33m.[39m[34mstubGlobal[39m([32m'setTimeout'[39m[33m,[39m (fn[33m:[39m [33mFunction[39m[33m,[39m delay[33m:[39m number) [33m=>[39m {
+    [90m111| [39m  [35mreturn[39m [34msetTimeout[39m(fn[33m,[39m [34m0[39m)[33m;[39m [90m// Use immediate execution for tests[39m
+    [90m   | [39m  [31m^[39m
+    [90m112| [39m})[33m;[39m
+    [90m113| [39m
+[90m [2m❯[22m src/test-setup.ts:[2m111:10[22m[39m
+[90m [2m❯[22m src/test-setup.ts:[2m111:10[22m[39m
+[90m [2m❯[22m src/test-setup.ts:[2m111:10[22m[39m
+[90m [2m❯[22m src/test-setup.ts:[2m111:10[22m[39m
+[90m [2m❯[22m src/test-setup.ts:[2m111:10[22m[39m
+[90m [2m❯[22m src/test-setup.ts:[2m111:10[22m[39m
+[90m [2m❯[22m src/test-setup.ts:[2m111:10[22m[39m
+[90m [2m❯[22m src/test-setup.ts:[2m111:10[22m[39m
+[90m [2m❯[22m src/test-setup.ts:[2m111:10[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/17]⎯[22m[39m
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[31m17 failed[39m[22m[2m | [22m[1m[32m33 passed[39m[22m[90m (50)[39m
+[2m   Start at [22m 17:42:00
+[2m   Duration [22m 338ms[2m (transform 57ms, setup 21ms, collect 180ms, tests 38ms, environment 140ms, prepare 58ms)[22m
+
+
+[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
+[?25h

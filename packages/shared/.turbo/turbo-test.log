@@ -1,0 +1,20 @@
+
+
+> @passkey-orchestrator/shared@1.0.0 test
+> vitest
+
+[1G[0K[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+[7m[1m[34m DEV [39m[22m[27m [34mv1.6.1[39m [90m/Users/adramendiaye/Documents/dev/passkey_orchestror/packages/shared[39m
+
+ [32m✓[39m [2msrc/[22merrors[2m.test.ts[22m[2m (12)[22m
+ [32m✓[39m [2msrc/[22mencoding[2m.test.ts[22m[2m (15)[22m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m27 passed[39m[22m[90m (27)[39m
+[2m   Start at [22m 17:41:59
+[2m   Duration [22m 273ms[2m (transform 34ms, setup 0ms, collect 40ms, tests 6ms, environment 286ms, prepare 63ms)[22m
+
+
+[1m[7m[32m PASS [39m[27m[22m[32m Waiting for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m
